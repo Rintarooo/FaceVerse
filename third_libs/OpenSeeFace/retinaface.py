@@ -67,8 +67,9 @@ class RetinaFaceDetector():
         options.graph_optimization_level = onnxruntime.GraphOptimizationLevel.ORT_ENABLE_ALL
         options.log_severity_level = 3
         # https://www.jianshu.com/p/f7f01904d96d
-        self.session = onnxruntime.InferenceSession(model_path, sess_options=options)
+        # self.session = onnxruntime.InferenceSession(model_path, sess_options=options)
         # self.session = onnxruntime.InferenceSession(model_path, sess_options=options, providers=['TensorrtExecutionProvider', 'CUDAExecutionProvider', 'CPUExecutionProvider'])
+        self.session = onnxruntime.InferenceSession(model_path, sess_options=options, providers=['CUDAExecutionProvider'])
         self.res_w, self.res_h = res
         with open(json_path, "r") as prior_file:
             self.priorbox = np.array(json.loads(prior_file.read()))
