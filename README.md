@@ -140,3 +140,14 @@ year={2022},
 ## Acknowledgement & License
 The code is partially borrowed from [3DMM-Fitting-Pytorch](https://github.com/ascust/3DMM-Fitting-Pytorch), [stylegan2-pytorch](https://github.com/rosinality/stylegan2-pytorch) and [OpenSeeFace](https://github.com/emilianavt/OpenSeeFace). And many thanks to the volunteers participated in data collection. Our License can be found in [LICENSE](./LICENSE).
 
+# Usage
+```bash
+# VM上でビルド
+docker-compose -f .devcontainer/docker-compose.yml build faceverse
+# docker-compose build
+# docker-compose build --no-cache
+
+xhost local:root
+
+docker-compose -f .devcontainer/docker-compose.yml run faceverse /bin/bash
+```
