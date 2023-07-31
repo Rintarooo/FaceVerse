@@ -53,6 +53,7 @@ python tracking_offline_cuda.py --input ../example/videos/test.mp4 --res_folder 
 
 # for a image folder
 python fit_imgs_offline_cuda.py --input ../example/images --res_folder output/images
+python fit_imgs_offline_cuda.py --input ../mydata/images/512/ --res_folder output/images/512
 ```
 
 online:
