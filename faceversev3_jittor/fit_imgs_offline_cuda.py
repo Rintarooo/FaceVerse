@@ -107,6 +107,8 @@ class Tracking(threading.Thread):
                 coeffs = self.fvm.get_packed_tensors().detach().clone()
                 coeffs[:, self.fvm.id_dims + 8:self.fvm.id_dims + 10] = self.eyes_refine(coeffs[:, self.fvm.id_dims + 8:self.fvm.id_dims + 10])
                 id_c, exp_c, tex_c, rot_c, gamma_c, trans_c, eye_c = self.fvm.split_coeffs(coeffs)
+                # https://github.com/LizhenWangT/FaceVerse/blob/f7abcfa392efc2a7cb0aebab388b7c18a91f95bb/faceversev3_jittor/tracking_offline_cuda.py#L125-L128
+                np.savetxt(os.path.join(self.args.res_folder, f'exp_{frame_name}.txt'), exp_c[0].numpy(), fmt='%.3f')
                 self.pred_dict = self.fvm(coeffs, render=True, surface=True, use_color=True)
                 lms_proj = self.pred_dict['lms_proj']
                 lms_proj_center = jt.mean(lms_proj, dim=1)
