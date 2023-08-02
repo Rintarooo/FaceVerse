@@ -8,21 +8,24 @@
 # faceverse_v1.zip: https://drive.google.com/file/d/1CWnZMxI_lH9lPo-_hbRvgM6b-KfSRtFJ/view
 # faceverse_simple_v2.npy: https://drive.google.com/file/d/1_ooP9hvR7kUUO8WhtXRU_D4nM5fr8BT_/view
 # faceverse_v3_6_s.npy: https://drive.google.com/file/d/1WrQ1UNMY30YAl8WxAbqVb6ZsPEQ_FHW4/view
+# faceversev3_jittor/data/rvm_1024_1024_32.onnx: https://drive.google.com/file/d/1544XkEO2rysSduJ55eBMX-nksW01NSNM/view
 
 # wget "https://drive.google.com/uc?export=download&id=${FILE_ID}" -O ${FILE_NAME}
 
 file_ids=(
-    "1V80ntpWj1BJb7jriWR2ipdcSQIFTHOwv"
-    "1CWnZMxI_lH9lPo-_hbRvgM6b-KfSRtFJ"
-    "1_ooP9hvR7kUUO8WhtXRU_D4nM5fr8BT_"
-    "1WrQ1UNMY30YAl8WxAbqVb6ZsPEQ_FHW4"
+    # "1V80ntpWj1BJb7jriWR2ipdcSQIFTHOwv"
+    # "1CWnZMxI_lH9lPo-_hbRvgM6b-KfSRtFJ"
+    # "1_ooP9hvR7kUUO8WhtXRU_D4nM5fr8BT_"
+    # "1WrQ1UNMY30YAl8WxAbqVb6ZsPEQ_FHW4"
+    "1544XkEO2rysSduJ55eBMX-nksW01NSNM"
 )
 
 file_names=(
-  "data/faceverse_v0.zip"
-  "data/faceverse_v1.zip"
-  "data/faceverse_simple_v2.npy"
-  "faceversev3_jittor/data/faceverse_v3_6_s.npy"
+  # "data/faceverse_v0.zip"
+  # "data/faceverse_v1.zip"
+  # "data/faceverse_simple_v2.npy"
+  # "faceversev3_jittor/data/faceverse_v3_6_s.npy"
+  "faceversev3_jittor/data/rvm_1024_1024_32.onnx"
 )
 
 # PRETRAINED_DIR="pretrained"
