@@ -11,6 +11,7 @@
 # faceversev3_jittor/data/rvm_1024_1024_32.onnx: https://drive.google.com/file/d/1544XkEO2rysSduJ55eBMX-nksW01NSNM/view
 
 # wget "https://drive.google.com/uc?export=download&id=${FILE_ID}" -O ${FILE_NAME}
+# wget "https://cg.cs.tsinghua.edu.cn/jittor/assets/dnnl_lnx_2.2.0_cpu_gomp.tgz" -O "/root/.cache/jittor/mkl/dnnl_lnx_2.2.0_cpu_gomp.tgz"
 
 file_ids=(
     # "1V80ntpWj1BJb7jriWR2ipdcSQIFTHOwv"
